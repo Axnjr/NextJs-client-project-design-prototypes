@@ -1,0 +1,103 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --foreground-rgb: #ffffff;
+  --background-start-rgb: #f3eee7;
+}
+
+@font-face {
+  font-family: "HK";
+  src: url(Rejouice-Headline-4ff9b9bbd7857ecb27f4ae48631d77f5.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-family: "HK";
+}
+
+body {
+  color: var(--foreground-rgb);
+  background: var(--background-start-rgb);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo{
+  position: fixed;
+  top: 0%;
+  margin: 3vw;
+  color: #080808;
+  font-size: 2vw;
+  /* background-color: black;
+  color: #ffffff;
+  border-radius: 5vw;
+  padding: 1vw;
+  font-size: 1.2vw; */
+  
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  filter: blur(2);
+  width: fit-content;
+  border-radius: 5vw;
+  padding: .2vw;
+  position: fixed;
+  top: 0%;
+  margin: 2.5vw;
+  right: 0%;
+  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+.nav p{
+  font-size: 1.2vw;
+  color: white;
+  border-radius: 5vw;
+  padding: 1vw;
+  transition: all .5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.nav p:nth-child(1){
+  margin-right: 0.5vw;
+}
+
+.nav p:nth-child(3){
+  margin-left: 0.5vw;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a{
+  margin-inline: 1vw;
+  font-size: 2vw;
+  color: #080808;
+}
+
+@media screen and (max-width:850px){
+  .nav p{
+    font-size: 0.8rem;
+  }
+  .logo{
+    font-size: 1.2rem;
+    z-index: 99999999999999999999999999999999999999;
+  }
+}
